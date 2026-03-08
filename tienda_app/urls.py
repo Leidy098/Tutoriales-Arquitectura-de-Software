@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import CompraRapidaView, home
+from .views import CompraView, home
 
 urlpatterns = [
     path('', home, name='home'),
-    path('compra-rapida/<int:libro_id>/', CompraRapidaView.as_view(), name='compra_rapida_cbv'),
+    path('compra/<int:libro_id>/', CompraView.as_view(), name='compra'),
 ]
