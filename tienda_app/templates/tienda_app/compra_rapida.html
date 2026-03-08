@@ -9,6 +9,8 @@
 
 <form method="post">
     {% csrf_token %}
+    <label for="direccion">Direccion de envio:</label>
+    <input id="direccion" name="direccion" type="text" placeholder="Calle 123 #45-67" />
     <button type="submit" style="background: orange;">
         Comprar Ya
     </button>
