@@ -23,7 +23,7 @@ services:
       - DB_PASSWORD=secret_password
       - DB_HOST=db
       - DB_PORT=5432
-      - ALLOWED_HOSTS=localhost,127.0.0.1,18.215.145.198
+      - ALLOWED_HOSTS=localhost,127.0.0.1,18.215.145.198,18.209.49.149,ec2-18-209-49-149.compute-1.amazonaws.com
 
   pagos_flask:
     build: ./microservicio_pagos
