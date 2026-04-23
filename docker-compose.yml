@@ -25,6 +25,7 @@ services:
       - DB_PASSWORD=secret_password
       - DB_HOST=db
       - DB_PORT=5432
+      - ALLOWED_HOSTS=localhost,127.0.0.1,18.215.145.198
     # NOTA: Ya no hay seccion 'ports' aqui. Django esta aislado.
 
   # CAMBIO 2: Agregamos el servicio Nginx
